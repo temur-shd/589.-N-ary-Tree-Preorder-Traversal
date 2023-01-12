@@ -10,3 +10,11 @@ Nary-Tree giriş serileştirmesi, seviye sırası geçişlerinde temsil edilir. 
 
 
 Deep-First-Search(DFC) mantığı kullanarak ilerlenir.
+DFC adı üstünde derinliğin öncelik olduğu graph arama algoritmasıdır.
+Bir root(kök) seçili ve herhangi bir alt node(düğüm)(children seçilerek) en uçtaki düğüme kadar gidir.
+Düğümleri stack(yığın) mantığıyla tutar. (Yani LIFO(son giren ilk çıkar))
+Her düğümün bir kez gezilme şartı olduğu için karmaşıklığı O(N)'dir.
+-----------------------
+Bu kodda da önce boş bir liste tanımlanır ve döngü ile düğümlerde ilerlenerek children düğüm değerleri yazılır. Boş ise null değer listeye eklenir.
+
+
